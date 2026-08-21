@@ -50,7 +50,7 @@
 
   <!-- HUD -->
   <g font-family="Courier New, monospace" font-size="10" fill="#ffffff" fill-opacity="0.7">
-    <text x="20" y="85">SYS://SHIKUNPNEG</</text>
+    <text x="20" y="85">SYS://SHIKUNPNEG</text>
     <text x="20" y="100">LAT: 30.5928 N</text>
     <text x="20" y="115">LON: 114.3055 E</text>
   </g>

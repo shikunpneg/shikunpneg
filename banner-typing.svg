@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" width="800" height="60">
-  <!-- 终端打字效果 · 静态单行（避免 SMIL 动画重叠） -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" preserveAspectRatio="xMidYMid meet">
+  <!-- 响应式：仅 viewBox，无 width -->
   <rect width="800" height="60" rx="4" fill="#0a0a0a"/>
   <rect x="0" y="0" width="800" height="60" fill="none" stroke="#ffffff" stroke-width="1" rx="4"/>
 
-  <!-- 静态文本（只显示一行，避免 3 行重叠） -->
   <text x="20" y="38" font-family="Courier New, monospace" font-size="18"
         font-weight="700" fill="#ffffff" letter-spacing="2">
     &gt; DEVELOPER · ENGINEER · OPEN SOURCE
   </text>
 
-  <!-- 静态闪烁光标块（GitHub CAMO 不渲染动画，所以用静态 box） -->
   <rect x="752" y="20" width="8" height="28" fill="#ffffff"/>
 
-  <!-- 装饰：左下角小标识 -->
   <text x="780" y="55" text-anchor="end" font-family="Courier New, monospace"
         font-size="9" fill="#8b8b8b" letter-spacing="1">v0.1.0</text>
 </svg>

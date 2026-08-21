@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280">
-  <!-- GitHub Stats 黑白卡片 · viewBox 修正为 960×280 适配 GitHub 渲染 -->
-  <rect width="960" height="280" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" preserveAspectRatio="xMidYMid meet">
+  <!-- 响应式 -->
+  <rect width="800" height="280" fill="#000000"/>
 
-  <!-- 标题 -->
   <text x="30" y="40" font-family="Courier New, monospace" font-size="13"
         font-weight="700" fill="#ffffff" letter-spacing="2">[ SYS://MONITOR ] :: GITHUB.STATS :: v0.1.0</text>
   <line x1="30" y1="50" x2="770" y2="50" stroke="#ffffff" stroke-width="1"/>
 
-  <!-- 4 个统计卡片 · 缩小到 200×80 -->
-  <!-- Card 1: Stars -->
   <g transform="translate(20, 70)">
     <rect width="180" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
     <text x="14" y="22" font-family="Courier New, monospace" font-size="10"
@@ -20,9 +17,8 @@
           fill="#8b8b8b" letter-spacing="1">+12 THIS MONTH</text>
   </g>
 
-  <!-- Card 2: Followers -->
   <g transform="translate(215, 70)">
-    <rect width="220" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
+    <rect width="180" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
     <text x="14" y="22" font-family="Courier New, monospace" font-size="10"
           fill="#8b8b8b" letter-spacing="1">[FOLLOWERS]</text>
     <text x="14" y="56" font-family="Courier New, monospace" font-size="24"
@@ -31,9 +27,8 @@
           fill="#8b8b8b" letter-spacing="1">+2 THIS MONTH</text>
   </g>
 
-  <!-- Card 3: Public Repos -->
   <g transform="translate(410, 70)">
-    <rect width="220" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
+    <rect width="180" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
     <text x="14" y="22" font-family="Courier New, monospace" font-size="10"
           fill="#8b8b8b" letter-spacing="1">[PUBLIC REPOS]</text>
     <text x="14" y="56" font-family="Courier New, monospace" font-size="24"
@@ -42,9 +37,8 @@
           fill="#8b8b8b" letter-spacing="1">+5 THIS MONTH</text>
   </g>
 
-  <!-- Card 4: Commits -->
   <g transform="translate(605, 70)">
-    <rect width="220" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
+    <rect width="180" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
     <text x="14" y="22" font-family="Courier New, monospace" font-size="10"
           fill="#8b8b8b" letter-spacing="1">[COMMITS]</text>
     <text x="14" y="56" font-family="Courier New, monospace" font-size="24"
@@ -53,7 +47,6 @@
           fill="#8b8b8b" letter-spacing="1">+89 THIS MONTH</text>
   </g>
 
-  <!-- 语言分布 -->
   <text x="20" y="180" font-family="Courier New, monospace" font-size="10"
         fill="#8b8b8b" letter-spacing="1">┌─ LANG.DISTRIBUTION ────────────────────┐</text>
   <text x="20" y="198" font-family="Courier New, monospace" font-size="10"
@@ -67,7 +60,6 @@
   <text x="20" y="258" font-family="Courier New, monospace" font-size="10"
         fill="#8b8b8b" letter-spacing="1">└────────────────────────────────────────┘</text>
 
-  <!-- 右上角标识 -->
   <text x="780" y="180" text-anchor="end" font-family="Courier New, monospace" font-size="10"
         fill="#8b8b8b" letter-spacing="1">[ SIGNAL: OK ]</text>
   <text x="780" y="198" text-anchor="end" font-family="Courier New, monospace" font-size="10"

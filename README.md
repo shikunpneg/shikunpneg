@@ -30,24 +30,24 @@
 
 ---
 
-<!-- 4 个 Pinned 仓库（vercel.app API 渲染） -->
+<!-- 4 个 Pinned 仓库（自渲染本地卡片 · 100% 兼容） -->
 <p align="center">
   <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shikunpneg&repo=Oracle-Bone-Script-IME&theme=default&hide_border=true" />
+    <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-1-oracle.svg" width="400" />
   </a>
   &nbsp;
   <a href="https://github.com/shikunpneg/HumanAlignedPoeticity-">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shikunpneg&repo=HumanAlignedPoeticity-&theme=default&hide_border=true" />
+    <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-2-poeticity.svg" width="400" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/shikunpneg/ChineseHardJudgePoem">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shikunpneg&repo=ChineseHardJudgePoem&theme=default&hide_border=true" />
+    <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-3-poem.svg" width="400" />
   </a>
   &nbsp;
   <a href="https://github.com/shikunpneg/see-quantum_world">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shikunpneg&repo=see-quantum_world&theme=default&hide_border=true" />
+    <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-4-quantum.svg" width="400" />
   </a>
 </p>
 

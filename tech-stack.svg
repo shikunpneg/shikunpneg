@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" width="760" height="240">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
   <!-- 黑白技术栈 · viewBox 修正 760×240，确保 label 不被切 -->
   <rect width="760" height="240" fill="#0a0a0a"/>
 
   <!-- 标题 -->
-  <text x="380" y="25" text-anchor="middle" font-family="Courier New, monospace"
+  <text x="400" y="25" text-anchor="middle" font-family="Courier New, monospace"
         font-size="13" font-weight="700" fill="#ffffff" letter-spacing="2">
-  [ SYS://TECH.STACK ] :: BLACK/WHITE MODE :: v0.1.0
+  [ SYS://TECH.STACK ] :: Black & White Mode :: v0.1.0
   </text>
 
   <!-- Row 1: 10 个图标 -->
   <!-- 每个图标 60×80：上方 40×40 图标 + 下方 12px 文字 -->
-  <g transform="translate(40, 60)">
+  <g transform="translate(60, 60)">
     <!-- Python -->
     <g transform="translate(0,0)">
       <rect x="6" y="6" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
@@ -98,7 +98,7 @@
   </g>
 
   <!-- Row 2: Linux, K8s, VSCode, FastAPI, GitHub, NGINX -->
-  <g transform="translate(40, 160)">
+  <g transform="translate(60, 160)">
     <!-- Linux -->
     <g transform="translate(0,0)">
       <rect x="6" y="10" width="48" height="36" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
@@ -173,6 +173,6 @@
   </g>
 
   <!-- 底部状态 -->
-  <text x="380" y="225" text-anchor="middle" font-family="Courier New, monospace"
+  <text x="400" y="225" text-anchor="middle" font-family="Courier New, monospace"
         font-size="10" fill="#8b8b8b" letter-spacing="2">[ READY · BLACK &amp; WHITE MODE · 2026 ]</text>
 </svg>

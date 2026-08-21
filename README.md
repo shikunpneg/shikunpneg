@@ -1,11 +1,11 @@
-<!-- 顶部赛博朋克黑白 Banner（800px 宽，与下方图片对齐） -->
+<!-- 顶部赛博朋克黑白 Banner（800px 宽 · 用 raw.githubusercontent.com 绝对路径避免跳转） -->
 <p align="center">
-  <img src="banner-cyberpunk.svg?v=2" alt="SHIKUNPNEG Banner" width="800" />
+  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/banner-cyberpunk.svg" alt="SHIKUNPNEG Banner" width="800" />
 </p>
 
-<!-- 终端静态文本（800px 宽，与 banner 对齐） -->
+<!-- 终端静态文本（800px 宽） -->
 <p align="center">
-  <img src="banner-typing.svg?v=2" alt="DEVELOPER · ENGINEER · OPEN SOURCE" width="800" />
+  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/banner-typing.svg" alt="DEVELOPER · ENGINEER · OPEN SOURCE" width="800" />
 </p>
 
 <br/>
@@ -23,14 +23,14 @@
 
 <!-- 自渲染黑白 Stats 卡片（800px 宽） -->
 <p align="center">
-  <img src="stats-card.svg?v=2" alt="GitHub Stats Card" width="800" />
+  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/stats-card.svg" alt="GitHub Stats Card" width="800" />
 </p>
 
 <br/>
 
 ---
 
-<!-- 4 个 Pinned 仓库 -->
+<!-- 4 个 Pinned 仓库（vercel.app API 渲染） -->
 <p align="center">
   <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=shikunpneg&repo=Oracle-Bone-Script-IME&theme=default&hide_border=true" />
@@ -55,14 +55,14 @@
 
 <!-- 自渲染黑白技术栈（800px 宽） -->
 <p align="center">
-  <img src="tech-stack.svg?v=2" alt="Tech Stack" width="800" />
+  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/tech-stack.svg" alt="Tech Stack" width="800" />
 </p>
 
 ---
 
-<!-- 自渲染 7×53 活动热力图（760px 宽，CAMO 友好） -->
+<!-- 自渲染 7×53 活动热力图（760px 宽） -->
 <p align="center">
-  <img src="activity-grid.svg?v=2" alt="Activity Graph" width="760" />
+  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/activity-grid.svg" alt="Activity Graph" width="760" />
 </p>
 
 ---

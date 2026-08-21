@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- 黑白渐变 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="50%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+
+    <!-- 扫描线 -->
+    <pattern id="scan" width="2" height="2" patternUnits="userSpaceOnUse">
+      <rect width="2" height="1" fill="rgba(255,255,255,0.06)"/>
+    </pattern>
+
+    <!-- 霓虹辉光 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- CRT 失真 -->
+    <filter id="crt">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3"/>
+    </filter>
+
+    <!-- 网格 -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- 顶部渐变遮罩 -->
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.4)"/>
+      <stop offset="80%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.6)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#grid)"/>
+
+  <!-- 远景城市天际线（黑白） -->
+  <g opacity="0.3" fill="white">
+    <polygon points="0,260 0,200 50,200 50,170 100,170 100,220 150,220 150,180 200,180 200,210 250,210 250,160 300,160 300,200 350,200 350,150 400,150 400,190 450,190 450,170 500,170 500,200 550,200 550,180 600,180 600,150 650,150 650,200 700,200 700,180 750,180 750,210 800,210 800,170 850,170 850,200 900,200 900,180 950,180 950,160 1000,160 1000,200 1050,200 1050,180 1100,180 1100,210 1150,210 1150,170 1200,170 1200,200 1250,200 1250,180 1280,180 1280,260" />
+    <rect x="100" y="220" width="6" height="20"/>
+    <rect x="180" y="200" width="6" height="20"/>
+    <rect x="280" y="180" width="6" height="25"/>
+    <rect x="350" y="150" width="6" height="30"/>
+    <rect x="500" y="180" width="6" height="20"/>
+    <rect x="620" y="170" width="6" height="20"/>
+    <rect x="800" y="190" width="6" height="25"/>
+    <rect x="950" y="180" width="6" height="30"/>
+    <rect x="1100" y="200" width="6" height="20"/>
+  </g>
+
+  <!-- 二进制流（背景） -->
+  <g font-family="Courier New, monospace" font-size="9" fill="rgba(255,255,255,0.15)" opacity="0.6">
+    <text x="40" y="50">01001000 01100101 01101100 01101100 01101111</text>
+    <text x="40" y="68">01010111 01101111 01110010 01101100 01100100</text>
+    <text x="900" y="50">10100101 01001010 11010010 10010110</text>
+    <text x="900" y="68">01001010 01100101 01110010 01110101 01110011</text>
+    <text x="950" y="280">[ OK ]</text>
+    <text x="1050" y="280">[ SYS ]</text>
+    <text x="1150" y="280">[ NET ]</text>
+  </g>
+
+  <!-- 中央大字（glitch 风格） -->
+  <g filter="url(#glow)">
+    <!-- 阴影偏移（RGB 错位效果） -->
+    <text x="640" y="180" text-anchor="middle"
+          font-family="Impact, Arial Black, sans-serif" font-weight="900"
+          font-size="120" fill="#ffffff" opacity="0.7"
+          transform="translate(-3,0)" letter-spacing="4">SHIKUNPNEG</text>
+    <text x="640" y="180" text-anchor="middle"
+          font-family="Impact, Arial Black, sans-serif" font-weight="900"
+          font-size="120" fill="#ffffff" opacity="0.7"
+          transform="translate(3,0)" letter-spacing="4">SHIKUNPNEG</text>
+    <!-- 主字 -->
+    <text x="640" y="180" text-anchor="middle"
+          font-family="Impact, Arial Black, sans-serif" font-weight="900"
+          font-size="120" fill="white" letter-spacing="4">SHIKUNPNEG</text>
+  </g>
+
+  <!-- 副标题 -->
+  <text x="640" y="220" text-anchor="middle"
+        font-family="Courier New, monospace" font-size="18"
+        fill="rgba(255,255,255,0.85)" letter-spacing="6">
+    &gt;&gt; ENGINEER · ORACLE BONE · DEVELOPER &lt;&lt;
+  </text>
+
+  <!-- 装饰：角落括号 -->
+  <g stroke="white" stroke-width="2" fill="none">
+    <!-- 左上 -->
+    <path d="M 30 30 L 30 60 M 30 30 L 60 30"/>
+    <!-- 右上 -->
+    <path d="M 1250 30 L 1250 60 M 1250 30 L 1220 30"/>
+    <!-- 左下 -->
+    <path d="M 30 290 L 30 260 M 30 290 L 60 290"/>
+    <!-- 右下 -->
+    <path d="M 1250 290 L 1250 260 M 1250 290 L 1220 290"/>
+  </g>
+
+  <!-- HUD 信息 -->
+  <g font-family="Courier New, monospace" font-size="11" fill="rgba(255,255,255,0.7)">
+    <text x="50" y="100">SYS://SHIKUNPNEG-NET</text>
+    <text x="50" y="115">UPTIME: 0427d 14:33:09</text>
+    <text x="50" y="130">LAT: 30.5928° N</text>
+    <text x="50" y="145">LON: 114.3055° E</text>
+  </g>
+  <g font-family="Courier New, monospace" font-size="11" fill="rgba(255,255,255,0.7)" text-anchor="end">
+    <text x="1230" y="100">[ ONLINE ]</text>
+    <text x="1230" y="115">SIGNAL: 99.7%</text>
+    <text x="1230" y="130">FPS: 60.0</text>
+    <text x="1230" y="145">v0.1.0 · 2026</text>
+  </g>
+
+  <!-- 扫描线（覆盖） -->
+  <rect width="1280" height="320" fill="url(#scan)"/>
+
+  <!-- 顶部底部渐变 -->
+  <rect width="1280" height="320" fill="url(#vignette)"/>
+
+  <!-- CRT 噪点（极少） -->
+  <g opacity="0.15" fill="white">
+    <rect x="123" y="45" width="2" height="2"/>
+    <rect x="345" y="78" width="2" height="2"/>
+    <rect x="678" y="234" width="2" height="2"/>
+    <rect x="892" y="123" width="2" height="2"/>
+    <rect x="1023" y="67" width="2" height="2"/>
+    <rect x="456" y="201" width="2" height="2"/>
+    <rect x="234" y="167" width="2" height="2"/>
+    <rect x="789" y="89" width="2" height="2"/>
+  </g>
+</svg>

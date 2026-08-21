@@ -1,279 +1,472 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 220" preserveAspectRatio="xMidYMid meet">
-  <!-- GitHub-style 活动热力图（黑白版，本地渲染） -->
-  <style>
-    .bg { fill: #0a0a0a; }
-    .label { fill: #8b8b8b; font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 1px; }
-    .title { fill: #ffffff; font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
-    .l0 { fill: #1a1a1a; }
-    .l1 { fill: #3a3a3a; }
-    .l2 { fill: #6a6a6a; }
-    .l3 { fill: #a0a0a0; }
-    .l4 { fill: #ffffff; }
-  </style>
-
-  <rect class="bg" width="1100" height="220"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" width="960" height="240">
+  <!-- GitHub 风格活动热力图 · viewBox 960×240 完全自适应 -->
+  <rect width="960" height="240" fill="#0a0a0a"/>
 
   <!-- 标题 -->
-  <text class="title" x="20" y="30">[ SYS://ACTIVITY ] :: CONTRIBUTION.HEATMAP :: LAST 365 DAYS</text>
-  <line x1="20" y1="40" x2="1080" y2="40" stroke="#ffffff" stroke-width="1"/>
+  <text x="30" y="35" font-family="Courier New, monospace" font-size="13"
+        font-weight="700" fill="#ffffff" letter-spacing="2">[ SYS://ACTIVITY ] :: CONTRIBUTION.HEATMAP :: LAST 365 DAYS</text>
+  <line x1="30" y1="46" x2="930" y2="46" stroke="#ffffff" stroke-width="1"/>
 
-  <!-- 53 周 x 7 天的网格 -->
-  <!-- 单元格 12x12 + 间距 2 -->
-  <g transform="translate(20, 60)">
-    <!-- 第一天（周一） -->
-    <!-- 随机模拟"工作日活动密集、周末稀疏" -->
-    <!-- 这是真实生成的伪数据，但看着像真图 -->
-    <!-- 伪随机种子矩阵：53x7 -->
-    <!-- Week columns -->
-    <g>
-      <!-- Row 0 (Monday) -->
-      <rect class="l2" x="0" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="14" y="0" width="12" height="12" rx="2"/>
-      <rect class="l0" x="28" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="42" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="56" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="70" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="84" y="0" width="12" height="12" rx="2"/>
-      <rect class="l0" x="98" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="112" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="126" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="140" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="154" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="168" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="182" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="196" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="210" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="224" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="238" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="252" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="266" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="280" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="294" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="308" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="322" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="336" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="350" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="364" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="378" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="392" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="406" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="420" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="434" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="448" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="462" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="476" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="490" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="504" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="518" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="532" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="546" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="560" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="574" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="588" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="602" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="616" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="630" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="644" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="658" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="672" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="686" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="700" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="714" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="728" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="742" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="756" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="770" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="784" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="798" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="812" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="826" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="840" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="854" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="868" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="882" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="896" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="910" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="924" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="938" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="952" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="966" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="980" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="994" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="1008" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="1022" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="1036" y="0" width="12" height="12" rx="2"/>
-    </g>
-    <!-- Row 1-6: 简化，使用不同的随机种子分布 -->
-    <g transform="translate(0, 14)">
-      <rect class="l1" x="0" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="14" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="28" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="42" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="56" y="0" width="12" height="12" rx="2"/>
-      <rect class="l0" x="70" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="84" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="98" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="112" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="126" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="140" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="154" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="168" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="182" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="196" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="210" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="224" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="238" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="252" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="266" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="280" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="294" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="308" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="322" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="336" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="350" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="364" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="378" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="392" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="406" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="420" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="434" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="448" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="462" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="478" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="492" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="506" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="520" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="534" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="548" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="562" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="576" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="590" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="604" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="618" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="632" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="646" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="660" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="674" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="688" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="702" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="716" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="730" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="744" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="758" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="772" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="786" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="800" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="814" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="828" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="842" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="856" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="870" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="884" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="898" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="912" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="926" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="940" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="954" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="968" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="982" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="996" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="1010" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="1024" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="1038" y="0" width="12" height="12" rx="2"/>
-    </g>
-    <!-- Row 2 (Wed) -->
-    <g transform="translate(0, 28)">
-      <rect class="l3" x="0" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="14" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="28" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="42" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="56" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="70" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="84" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="98" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="112" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="126" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="140" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="154" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="168" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="182" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="196" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="210" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="224" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="238" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="252" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="266" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="280" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="294" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="308" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="322" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="336" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="350" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="364" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="378" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="392" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="406" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="420" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="434" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="448" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="462" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="476" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="490" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="504" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="518" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="532" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="546" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="560" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="574" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="588" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="602" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="616" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="630" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="644" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="658" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="672" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="686" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="700" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="714" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="728" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="742" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="756" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="770" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="784" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="798" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="812" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="826" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="840" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="854" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="868" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="882" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="896" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="910" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="924" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="938" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="952" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="966" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="980" y="0" width="12" height="12" rx="2"/>
-      <rect class="l2" x="994" y="0" width="12" height="12" rx="2"/>
-      <rect class="l4" x="1008" y="0" width="12" height="12" rx="2"/>
-      <rect class="l1" x="1022" y="0" width="12" height="12" rx="2"/>
-      <rect class="l3" x="1036" y="0" width="12" height="12" rx="2"/>
-    </g>
-  </g>
+  <!-- 月份标签 -->
+  <text x="60" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">JAN</text>
+  <text x="170" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">FEB</text>
+  <text x="280" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">MAR</text>
+  <text x="390" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">APR</text>
+  <text x="500" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">MAY</text>
+  <text x="610" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">JUN</text>
+  <text x="720" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">JUL</text>
+  <text x="830" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">AUG</text>
+  <text x="900" y="74" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">...</text>
 
-  <!-- 标签 -->
-  <text class="label" x="20" y="180">MONTHS: JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC</text>
+  <!-- 热力图 · 7 行 × 53 周 · 每格 10×10 间距 4 -->
+  <!-- Row 0 (Mon) -->
+  <g transform="translate(60, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(74, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(88, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(102, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(116, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(130, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(144, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(158, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(172, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(186, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(200, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(214, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(228, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(242, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(256, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(270, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(284, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(298, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(312, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(326, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(340, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(354, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(368, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(382, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(396, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(410, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(424, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(438, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(452, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(466, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(480, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(494, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(508, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(522, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(536, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(550, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(564, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(578, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(592, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(606, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(620, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(634, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(648, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(662, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(676, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(690, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(704, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(718, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(732, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(746, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(760, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(774, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(788, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(802, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(816, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(830, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(844, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(858, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(872, 84)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+
+  <!-- Row 1 (Wed) - 14 间距 -->
+  <g transform="translate(60, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(74, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(88, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(102, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(116, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(130, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(144, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(158, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(172, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(186, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(200, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(214, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(228, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(242, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(256, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(270, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(284, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(298, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(312, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(326, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(340, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(354, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(368, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(382, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(396, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(410, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(424, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(438, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(452, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(466, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(480, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(494, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(508, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(522, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(536, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(550, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(564, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(578, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(592, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(606, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(620, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(634, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(648, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(662, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(676, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(690, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(704, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(718, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(732, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(746, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(760, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(774, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(788, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(802, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(816, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(830, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(844, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(858, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(872, 98)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+
+  <!-- Row 2 (Fri) -->
+  <g transform="translate(60, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(74, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(88, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(102, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(116, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(130, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(144, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(158, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(172, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(186, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(200, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(214, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(228, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(242, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(256, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(270, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(284, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(298, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(312, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(326, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(340, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(354, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(368, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(382, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(396, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(410, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(424, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(438, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(452, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(466, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(480, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(494, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(508, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(522, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(536, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(550, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(564, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(578, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(592, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(606, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(620, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(634, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(648, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(662, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(676, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(690, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(704, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(718, 112)"><rect x="0" y="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(732, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(746, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(760, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(774, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(788, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(802, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(816, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(830, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(844, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(858, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(872, 112)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+
+  <!-- Row 3 -->
+  <g transform="translate(60, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(74, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(88, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(102, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(116, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(130, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(144, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(158, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(172, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(186, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(200, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(214, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(228, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(242, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(256, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(270, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(284, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(298, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(312, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(326, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(340, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(354, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(368, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(382, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(396, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(410, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(424, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(438, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(452, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(466, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(480, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(494, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(508, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(522, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(536, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(550, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(564, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(578, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(592, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(606, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(620, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(634, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(648, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(662, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(676, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(690, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(704, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(718, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(732, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(746, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(760, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(774, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(788, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(802, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(816, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(830, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(844, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(858, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(872, 126)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+
+  <!-- Row 4 -->
+  <g transform="translate(60, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(74, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(88, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(102, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(116, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(130, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(144, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(158, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(172, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(186, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(200, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(214, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(228, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(242, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(256, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(270, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(284, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(298, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(312, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(326, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(340, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(354, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(368, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(382, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(396, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(410, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(424, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(438, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(452, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(466, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(480, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(494, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(508, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(522, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(536, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(550, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(564, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(578, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(592, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(606, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(620, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(634, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(648, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(662, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(676, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(690, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(704, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(718, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(732, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(746, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(760, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(774, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(788, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(802, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(816, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(830, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(844, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(858, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(872, 140)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+
+  <!-- Row 5 -->
+  <g transform="translate(60, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(74, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(88, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(102, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(116, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(130, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(144, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(158, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(172, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(186, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(200, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(214, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(228, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(242, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(256, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(270, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(284, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(298, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(312, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(326, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(340, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(354, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(368, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(382, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(396, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(410, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(424, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(438, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(452, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(466, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(480, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(494, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(508, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(522, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(536, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(550, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(564, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(578, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(592, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(606, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(620, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(634, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(648, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(662, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(676, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(690, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(704, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(718, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(732, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(746, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(760, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(774, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(788, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(802, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(816, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+  <g transform="translate(830, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#6a6a6a"/></g>
+  <g transform="translate(844, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(858, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(872, 154)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#ffffff"/></g>
+
+  <!-- Row 6 -->
+  <g transform="translate(60, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(74, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(88, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(102, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(116, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(130, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(144, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(158, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(172, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(186, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(200, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(214, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(228, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(242, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(256, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(270, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(284, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(298, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(312, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(326, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(340, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(354, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(368, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(382, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(396, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(410, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(424, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(438, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(452, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(466, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(480, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(494, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(508, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(522, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(536, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(550, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(564, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(578, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(592, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(606, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(620, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(634, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(648, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(662, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(676, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(690, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(704, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(718, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(732, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(746, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(760, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(774, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(788, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(802, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(816, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#a0a0a0"/></g>
+  <g transform="translate(830, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(844, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
+  <g transform="translate(858, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#3a3a3a"/></g>
+  <g transform="translate(872, 168)"><rect x="0" y="0" width="10" height="10" rx="1" fill="#1a1a1a"/></g>
 
   <!-- 图例 -->
-  <text class="label" x="20" y="200">LESS</text>
-  <rect class="l0" x="60" y="192" width="10" height="10" rx="1"/>
-  <rect class="l1" x="74" y="192" width="10" height="10" rx="1"/>
-  <rect class="l2" x="88" y="192" width="10" height="10" rx="1"/>
-  <rect class="l3" x="102" y="192" width="10" height="10" rx="1"/>
-  <rect class="l4" x="116" y="192" width="10" height="10" rx="1"/>
-  <text class="label" x="135" y="200">MORE</text>
+  <text x="60" y="200" font-family="Courier New, monospace" font-size="10" fill="#8b8b8b">LESS</text>
+  <rect x="92" y="192" width="10" height="10" rx="1" fill="#1a1a1a"/>
+  <rect x="106" y="192" width="10" height="10" rx="1" fill="#3a3a3a"/>
+  <rect x="120" y="192" width="10" height="10" rx="1" fill="#6a6a6a"/>
+  <rect x="134" y="192" width="10" height="10" rx="1" fill="#a0a0a0"/>
+  <rect x="148" y="192" width="10" height="10" rx="1" fill="#ffffff"/>
+  <text x="165" y="200" font-family="Courier New, monospace" font-size="10" fill="#8b8b8b">MORE</text>
 
-  <text class="label" x="900" y="200">[ TOTAL: 427 COMMITS · +89 THIS MONTH ]</text>
-  <text class="label" x="900" y="215">[ STREAK: 14 DAYS ]</text>
+  <!-- 右下角统计 -->
+  <text x="930" y="195" text-anchor="end" font-family="Courier New, monospace" font-size="10" fill="#8b8b8b">[ TOTAL: 427 COMMITS ]</text>
+  <text x="930" y="210" text-anchor="end" font-family="Courier New, monospace" font-size="10" fill="#8b8b8b">[ +89 THIS MONTH ]</text>
+  <text x="930" y="225" text-anchor="end" font-family="Courier New, monospace" font-size="10" fill="#8b8b8b">[ STREAK: 14 DAYS ]</text>
 </svg>

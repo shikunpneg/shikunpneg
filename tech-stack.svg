@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
-  <!-- 黑白技术栈 · viewBox 修正 760×240，确保 label 不被切 -->
-  <rect width="760" height="240" fill="#0a0a0a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid meet">
+  <!-- 响应式 -->
+  <rect width="800" height="240" fill="#0a0a0a"/>
 
-  <!-- 标题 -->
   <text x="400" y="25" text-anchor="middle" font-family="Courier New, monospace"
         font-size="13" font-weight="700" fill="#ffffff" letter-spacing="2">
   [ SYS://TECH.STACK ] :: Black &amp; White Mode :: v0.1.0
   </text>
 
-  <!-- Row 1: 10 个图标 -->
-  <!-- 每个图标 60×80：上方 40×40 图标 + 下方 12px 文字 -->
   <g transform="translate(60, 60)">
-    <!-- Python -->
     <g transform="translate(0,0)">
       <rect x="6" y="6" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="40" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -20,7 +16,6 @@
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">PYTHON</text>
     </g>
-    <!-- TypeScript -->
     <g transform="translate(70,0)">
       <rect x="6" y="6" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="40" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -28,7 +23,6 @@
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">TS</text>
     </g>
-    <!-- JavaScript -->
     <g transform="translate(140,0)">
       <rect x="6" y="6" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="40" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -36,7 +30,6 @@
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">JS</text>
     </g>
-    <!-- Go -->
     <g transform="translate(210,0)">
       <rect x="6" y="6" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="40" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -44,7 +37,6 @@
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">GO</text>
     </g>
-    <!-- Rust -->
     <g transform="translate(280,0)">
       <rect x="6" y="6" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="40" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -52,13 +44,11 @@
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">RUST</text>
     </g>
-    <!-- Vue -->
     <g transform="translate(350,0)">
       <polygon points="30,8 56,50 4,50" fill="none" stroke="#ffffff" stroke-width="1.5"/>
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">VUE</text>
     </g>
-    <!-- React -->
     <g transform="translate(420,0)">
       <circle cx="30" cy="30" r="4" fill="#ffffff"/>
       <circle cx="30" cy="30" r="14" fill="none" stroke="#ffffff" stroke-width="1.5"/>
@@ -68,7 +58,6 @@
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">REACT</text>
     </g>
-    <!-- Node -->
     <g transform="translate(490,0)">
       <rect x="6" y="14" width="48" height="32" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="36" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -76,7 +65,6 @@
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">NODE</text>
     </g>
-    <!-- Docker -->
     <g transform="translate(560,0)">
       <rect x="4" y="14" width="52" height="32" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <circle cx="30" cy="30" r="4" fill="#ffffff"/>
@@ -85,7 +73,6 @@
       <text x="30" y="78" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">DOCKER</text>
     </g>
-    <!-- Git -->
     <g transform="translate(630,0)">
       <circle cx="30" cy="30" r="20" fill="none" stroke="#ffffff" stroke-width="1.5"/>
       <line x1="30" y1="10" x2="30" y2="50" stroke="#ffffff" stroke-width="1.5"/>
@@ -97,9 +84,7 @@
     </g>
   </g>
 
-  <!-- Row 2: Linux, K8s, VSCode, FastAPI, GitHub, NGINX -->
   <g transform="translate(60, 160)">
-    <!-- Linux -->
     <g transform="translate(0,0)">
       <rect x="6" y="10" width="48" height="36" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="34" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -107,20 +92,17 @@
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">LINUX</text>
     </g>
-    <!-- Kubernetes -->
     <g transform="translate(70,0)">
       <polygon points="30,4 56,20 56,52 30,68 4,52 4,20" fill="none" stroke="#ffffff" stroke-width="1.5"/>
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">K8S</text>
     </g>
-    <!-- VS Code -->
     <g transform="translate(140,0)">
       <rect x="6" y="6" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <path d="M 16 18 L 32 32 L 16 46" fill="none" stroke="#ffffff" stroke-width="1.5"/>
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">VSCODE</text>
     </g>
-    <!-- FastAPI -->
     <g transform="translate(210,0)">
       <rect x="6" y="10" width="48" height="40" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="34" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -128,33 +110,28 @@
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">FASTAPI</text>
     </g>
-    <!-- GitHub -->
     <g transform="translate(280,0)">
       <circle cx="30" cy="30" r="20" fill="#ffffff"/>
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">GITHUB</text>
     </g>
-    <!-- NGINX -->
     <g transform="translate(350,0)">
       <polygon points="4,46 30,8 56,46" fill="none" stroke="#ffffff" stroke-width="1.5"/>
       <line x1="14" y1="32" x2="46" y2="32" stroke="#ffffff" stroke-width="1.5"/>
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">NGINX</text>
     </g>
-    <!-- Tailwind -->
     <g transform="translate(420,0)">
       <path d="M 6 40 Q 14 12 26 26 T 54 12" fill="none" stroke="#ffffff" stroke-width="2"/>
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">TAILWIND</text>
     </g>
-    <!-- Vite -->
     <g transform="translate(490,0)">
       <polygon points="20,10 52,40 20,52 12,46 36,30 12,16" fill="#ffffff"/>
       <polygon points="32,10 20,46 32,52 44,46 24,30 44,16" fill="#ffffff" fill-opacity="0.5"/>
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">VITE</text>
     </g>
-    <!-- Next.js -->
     <g transform="translate(560,0)">
       <circle cx="30" cy="30" r="20" fill="none" stroke="#ffffff" stroke-width="1.5"/>
       <text x="30" y="38" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -162,7 +139,6 @@
       <text x="30" y="64" text-anchor="middle" font-family="Courier New, monospace"
             font-size="9" fill="#ffffff" letter-spacing="1">NEXT.JS</text>
     </g>
-    <!-- CI/CD -->
     <g transform="translate(630,0)">
       <rect x="6" y="14" width="48" height="32" fill="none" stroke="#ffffff" stroke-width="1.5" rx="4"/>
       <text x="30" y="34" text-anchor="middle" font-family="Arial Black, sans-serif"
@@ -172,7 +148,6 @@
     </g>
   </g>
 
-  <!-- 底部状态 -->
   <text x="400" y="225" text-anchor="middle" font-family="Courier New, monospace"
         font-size="10" fill="#8b8b8b" letter-spacing="2">[ READY · BLACK &amp; WHITE MODE · 2026 ]</text>
 </svg>

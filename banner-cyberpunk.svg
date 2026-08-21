@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" preserveAspectRatio="xMidYMid meet" width="960" height="240">
-  <!-- 黑白 cyberpunk banner · 适配 GitHub CAMO（无 CSS 动画、无滤镜，纯 SVG 原生元素） -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <!-- 黑白 cyberpunk banner · 800px 宽统一 -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#000000"/>
@@ -15,35 +15,34 @@
     </pattern>
   </defs>
 
-  <!-- 背景 -->
-  <rect width="960" height="240" fill="url(#bg)"/>
-  <rect width="960" height="240" fill="url(#grid)"/>
+  <rect width="800" height="240" fill="url(#bg)"/>
+  <rect width="800" height="240" fill="url(#grid)"/>
 
   <!-- 远景天际线 -->
   <g fill="#ffffff" fill-opacity="0.25">
-    <polygon points="0,200 0,160 60,160 60,130 110,130 110,180 160,180 160,150 210,150 210,190 260,190 260,170 310,170 310,140 360,140 360,180 410,180 410,150 460,150 460,180 510,180 510,140 560,140 560,170 610,170 610,150 660,150 660,180 710,180 710,160 760,160 760,180 810,180 810,140 860,140 860,180 910,180 910,160 960,160 960,200"/>
-    <rect x="100" y="180" width="4" height="14"/>
-    <rect x="200" y="150" width="4" height="18"/>
-    <rect x="350" y="140" width="4" height="22"/>
-    <rect x="560" y="140" width="4" height="22"/>
-    <rect x="810" y="140" width="4" height="22"/>
+    <polygon points="0,200 0,160 50,160 50,130 100,130 100,180 150,180 150,150 200,150 200,190 250,190 250,170 300,170 300,140 350,140 350,180 400,180 400,150 450,150 450,180 500,180 500,140 550,140 550,170 600,170 600,150 650,150 650,180 700,180 700,160 750,160 750,180 800,180 800,200"/>
+    <rect x="90" y="180" width="4" height="14"/>
+    <rect x="190" y="150" width="4" height="18"/>
+    <rect x="340" y="140" width="4" height="22"/>
+    <rect x="540" y="140" width="4" height="22"/>
+    <rect x="740" y="160" width="4" height="14"/>
   </g>
 
   <!-- 二进制流 -->
   <g font-family="Courier New, monospace" font-size="9" fill="#ffffff" fill-opacity="0.25">
-    <text x="30" y="40">01001000 01100101</text>
-    <text x="30" y="55">01101100 01101100</text>
-    <text x="740" y="40">01101011 01110101</text>
-    <text x="740" y="55">01110000 01101110</text>
+    <text x="20" y="38">01001000 01100101 01101100 01101100</text>
+    <text x="20" y="52">01001111 01010000 01000101 01001110</text>
+    <text x="540" y="38">01010011 01001111 01010101 01010010</text>
+    <text x="540" y="52">01000011 01000101 00100000 01001111</text>
   </g>
 
-  <!-- 主字 SHIKUNPNEG · 单层（避免 glitch 在 CAMO 被剥） -->
-  <text x="480" y="135" text-anchor="middle"
+  <!-- 主字 SHIKUNPNEG -->
+  <text x="400" y="135" text-anchor="middle"
         font-family="Arial Black, Impact, sans-serif" font-weight="900"
-        font-size="72" fill="#ffffff" letter-spacing="6">SHIKUNPNEG</text>
+        font-size="64" fill="#ffffff" letter-spacing="6">SHIKUNPNEG</text>
 
   <!-- 副标题 -->
-  <text x="480" y="165" text-anchor="middle"
+  <text x="400" y="165" text-anchor="middle"
         font-family="Courier New, monospace" font-size="14"
         fill="#ffffff" fill-opacity="0.85" letter-spacing="4">
     &gt;&gt; ENGINEER · ORACLE BONE · DEVELOPER &lt;&lt;
@@ -51,24 +50,24 @@
 
   <!-- HUD -->
   <g font-family="Courier New, monospace" font-size="10" fill="#ffffff" fill-opacity="0.7">
-    <text x="30" y="90">SYS://SHIKUNPNEG</text>
-    <text x="30" y="105">LAT: 30.5928 N</text>
-    <text x="30" y="120">LON: 114.3055 E</text>
+    <text x="20" y="85">SYS://SHIKUNPNEG</</text>
+    <text x="20" y="100">LAT: 30.5928 N</text>
+    <text x="20" y="115">LON: 114.3055 E</text>
   </g>
   <g font-family="Courier New, monospace" font-size="10" fill="#ffffff" fill-opacity="0.7" text-anchor="end">
-    <text x="930" y="90">[ ONLINE ]</text>
-    <text x="930" y="105">FPS: 60.0</text>
-    <text x="930" y="120">v0.1.0 · 2026</text>
+    <text x="780" y="85">[ ONLINE ]</text>
+    <text x="780" y="100">FPS: 60.0</text>
+    <text x="780" y="115">v0.1.0 · 2026</text>
   </g>
 
   <!-- 四角括号 -->
   <g stroke="#ffffff" stroke-width="2" fill="none">
-    <path d="M 20 20 L 20 50 M 20 20 L 50 20"/>
-    <path d="M 940 20 L 940 50 M 940 20 L 910 20"/>
-    <path d="M 20 220 L 20 190 M 20 220 L 50 220"/>
-    <path d="M 940 220 L 940 190 M 940 220 L 910 220"/>
+    <path d="M 15 15 L 15 45 M 15 15 L 45 15"/>
+    <path d="M 785 15 L 785 45 M 785 15 L 755 15"/>
+    <path d="M 15 225 L 15 195 M 15 225 L 45 225"/>
+    <path d="M 785 225 L 785 195 M 785 225 L 755 225"/>
   </g>
 
   <!-- 扫描线 -->
-  <rect width="960" height="240" fill="url(#scan)"/>
+  <rect width="800" height="240" fill="url(#scan)"/>
 </svg>

@@ -1,65 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" preserveAspectRatio="xMidYMid meet">
-  <!-- GitHub Stats 黑白版：纯 SVG，本地渲染，不依赖任何外部服务 -->
-  <style>
-    .bg-card { fill: #0a0a0a; stroke: #ffffff; stroke-width: 1; }
-    .label { fill: #8b8b8b; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 1px; }
-    .value { fill: #ffffff; font-family: 'Courier New', monospace; font-size: 28px; font-weight: 700; letter-spacing: 2px; }
-    .title { fill: #ffffff; font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
-    .sub { fill: #8b8b8b; font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 1px; }
-    .accent { fill: #ffffff; }
-  </style>
-
-  <rect width="1280" height="320" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280">
+  <!-- GitHub Stats 黑白卡片 · viewBox 修正为 960×280 适配 GitHub 渲染 -->
+  <rect width="960" height="280" fill="#000000"/>
 
   <!-- 标题 -->
-  <text class="title" x="40" y="50">[ SYS://MONITOR ] :: GITHUB.STATS :: v0.1.0</text>
-  <line x1="40" y1="60" x2="1240" y2="60" stroke="#ffffff" stroke-width="1"/>
+  <text x="30" y="40" font-family="Courier New, monospace" font-size="13"
+        font-weight="700" fill="#ffffff" letter-spacing="2">[ SYS://MONITOR ] :: GITHUB.STATS :: v0.1.0</text>
+  <line x1="30" y1="50" x2="930" y2="50" stroke="#ffffff" stroke-width="1"/>
 
-  <!-- 4 个统计卡片 -->
+  <!-- 4 个统计卡片 · 缩小到 200×80 -->
   <!-- Card 1: Stars -->
-  <g transform="translate(40, 80)">
-    <rect class="bg-card" width="280" height="100" rx="4"/>
-    <text class="label" x="20" y="25">[STARS]</text>
-    <text class="value" x="20" y="68">155</text>
-    <text class="sub" x="20" y="88">▲ +12 THIS MONTH</text>
+  <g transform="translate(30, 70)">
+    <rect width="220" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
+    <text x="14" y="22" font-family="Courier New, monospace" font-size="10"
+          fill="#8b8b8b" letter-spacing="1">[STARS]</text>
+    <text x="14" y="56" font-family="Courier New, monospace" font-size="24"
+          font-weight="700" fill="#ffffff" letter-spacing="2">155</text>
+    <text x="14" y="72" font-family="Courier New, monospace" font-size="9"
+          fill="#8b8b8b" letter-spacing="1">+12 THIS MONTH</text>
   </g>
 
   <!-- Card 2: Followers -->
-  <g transform="translate(340, 80)">
-    <rect class="bg-card" width="280" height="100" rx="4"/>
-    <text class="label" x="20" y="25">[FOLLOWERS]</text>
-    <text class="value" x="20" y="68">6</text>
-    <text class="sub" x="20" y="88">▲ +2 THIS MONTH</text>
+  <g transform="translate(265, 70)">
+    <rect width="220" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
+    <text x="14" y="22" font-family="Courier New, monospace" font-size="10"
+          fill="#8b8b8b" letter-spacing="1">[FOLLOWERS]</text>
+    <text x="14" y="56" font-family="Courier New, monospace" font-size="24"
+          font-weight="700" fill="#ffffff" letter-spacing="2">6</text>
+    <text x="14" y="72" font-family="Courier New, monospace" font-size="9"
+          fill="#8b8b8b" letter-spacing="1">+2 THIS MONTH</text>
   </g>
 
   <!-- Card 3: Public Repos -->
-  <g transform="translate(640, 80)">
-    <rect class="bg-card" width="280" height="100" rx="4"/>
-    <text class="label" x="20" y="25">[PUBLIC REPOS]</text>
-    <text class="value" x="20" y="68">28</text>
-    <text class="sub" x="20" y="88">▲ +5 THIS MONTH</text>
+  <g transform="translate(500, 70)">
+    <rect width="220" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
+    <text x="14" y="22" font-family="Courier New, monospace" font-size="10"
+          fill="#8b8b8b" letter-spacing="1">[PUBLIC REPOS]</text>
+    <text x="14" y="56" font-family="Courier New, monospace" font-size="24"
+          font-weight="700" fill="#ffffff" letter-spacing="2">28</text>
+    <text x="14" y="72" font-family="Courier New, monospace" font-size="9"
+          fill="#8b8b8b" letter-spacing="1">+5 THIS MONTH</text>
   </g>
 
-  <!-- Card 4: Total Commits -->
-  <g transform="translate(940, 80)">
-    <rect class="bg-card" width="280" height="100" rx="4"/>
-    <text class="label" x="20" y="25">[COMMITS]</text>
-    <text class="value" x="20" y="68">427</text>
-    <text class="sub" x="20" y="88">▲ +89 THIS MONTH</text>
+  <!-- Card 4: Commits -->
+  <g transform="translate(735, 70)">
+    <rect width="220" height="80" rx="4" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
+    <text x="14" y="22" font-family="Courier New, monospace" font-size="10"
+          fill="#8b8b8b" letter-spacing="1">[COMMITS]</text>
+    <text x="14" y="56" font-family="Courier New, monospace" font-size="24"
+          font-weight="700" fill="#ffffff" letter-spacing="2">427</text>
+    <text x="14" y="72" font-family="Courier New, monospace" font-size="9"
+          fill="#8b8b8b" letter-spacing="1">+89 THIS MONTH</text>
   </g>
 
-  <!-- ASCII 装饰 -->
-  <text class="sub" x="40" y="220">┌────────────────────────────────────────────────────────────────┐</text>
-  <text class="sub" x="40" y="240">│  LANG DISTRIBUTION                                              │</text>
-  <text class="sub" x="40" y="260">│  Python    ████████████░░░░░░░░░░░░░░  38%                     │</text>
-  <text class="sub" x="40" y="275">│  TypeScript ████████░░░░░░░░░░░░░░░░░  26%                    │</text>
-  <text class="sub" x="40" y="290">│  HTML      ███░░░░░░░░░░░░░░░░░░░░░░░  10%                     │</text>
-  <text class="sub" x="40" y="305">│  Go        ██░░░░░░░░░░░░░░░░░░░░░░░░  7%                      │</text>
-  <text class="sub" x="40" y="318">└────────────────────────────────────────────────────────────────┘</text>
+  <!-- 语言分布 -->
+  <text x="30" y="180" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">┌─ LANG.DISTRIBUTION ────────────────────────────────────────┐</text>
+  <text x="30" y="198" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">│  Python      ████████████░░░░░░░░░░░░░░  38%</text>
+  <text x="30" y="213" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">│  TypeScript  ████████░░░░░░░░░░░░░░░░░  26%</text>
+  <text x="30" y="228" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">│  HTML        ███░░░░░░░░░░░░░░░░░░░░░░░  10%</text>
+  <text x="30" y="243" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">│  Go          ██░░░░░░░░░░░░░░░░░░░░░░░░   7%</text>
+  <text x="30" y="258" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">└────────────────────────────────────────────────────────────┘</text>
 
-  <!-- 右下角装饰 -->
-  <text class="sub" x="900" y="270">[ SIGNAL: OK ]</text>
-  <text class="sub" x="900" y="285">[ UPTIME: 0427d ]</text>
-  <text class="sub" x="900" y="300">[ BUILD: 0xCAFEBABE ]</text>
+  <!-- 右上角标识 -->
+  <text x="930" y="180" text-anchor="end" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">[ SIGNAL: OK ]</text>
+  <text x="930" y="198" text-anchor="end" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">[ UPTIME: 0427d ]</text>
+  <text x="930" y="216" text-anchor="end" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">[ BUILD: 0xCAFEBABE ]</text>
+  <text x="930" y="234" text-anchor="end" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">[ TX: STABLE ]</text>
+  <text x="930" y="252" text-anchor="end" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">[ NET: 99.7% ]</text>
 </svg>

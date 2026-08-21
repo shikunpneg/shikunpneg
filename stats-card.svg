@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" preserveAspectRatio="xMidYMid meet">
+  <!-- GitHub Stats 黑白版：纯 SVG，本地渲染，不依赖任何外部服务 -->
+  <style>
+    .bg-card { fill: #0a0a0a; stroke: #ffffff; stroke-width: 1; }
+    .label { fill: #8b8b8b; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 1px; }
+    .value { fill: #ffffff; font-family: 'Courier New', monospace; font-size: 28px; font-weight: 700; letter-spacing: 2px; }
+    .title { fill: #ffffff; font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
+    .sub { fill: #8b8b8b; font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 1px; }
+    .accent { fill: #ffffff; }
+  </style>
+
+  <rect width="1280" height="320" fill="#000000"/>
+
+  <!-- 标题 -->
+  <text class="title" x="40" y="50">[ SYS://MONITOR ] :: GITHUB.STATS :: v0.1.0</text>
+  <line x1="40" y1="60" x2="1240" y2="60" stroke="#ffffff" stroke-width="1"/>
+
+  <!-- 4 个统计卡片 -->
+  <!-- Card 1: Stars -->
+  <g transform="translate(40, 80)">
+    <rect class="bg-card" width="280" height="100" rx="4"/>
+    <text class="label" x="20" y="25">[STARS]</text>
+    <text class="value" x="20" y="68">155</text>
+    <text class="sub" x="20" y="88">▲ +12 THIS MONTH</text>
+  </g>
+
+  <!-- Card 2: Followers -->
+  <g transform="translate(340, 80)">
+    <rect class="bg-card" width="280" height="100" rx="4"/>
+    <text class="label" x="20" y="25">[FOLLOWERS]</text>
+    <text class="value" x="20" y="68">6</text>
+    <text class="sub" x="20" y="88">▲ +2 THIS MONTH</text>
+  </g>
+
+  <!-- Card 3: Public Repos -->
+  <g transform="translate(640, 80)">
+    <rect class="bg-card" width="280" height="100" rx="4"/>
+    <text class="label" x="20" y="25">[PUBLIC REPOS]</text>
+    <text class="value" x="20" y="68">28</text>
+    <text class="sub" x="20" y="88">▲ +5 THIS MONTH</text>
+  </g>
+
+  <!-- Card 4: Total Commits -->
+  <g transform="translate(940, 80)">
+    <rect class="bg-card" width="280" height="100" rx="4"/>
+    <text class="label" x="20" y="25">[COMMITS]</text>
+    <text class="value" x="20" y="68">427</text>
+    <text class="sub" x="20" y="88">▲ +89 THIS MONTH</text>
+  </g>
+
+  <!-- ASCII 装饰 -->
+  <text class="sub" x="40" y="220">┌────────────────────────────────────────────────────────────────┐</text>
+  <text class="sub" x="40" y="240">│  LANG DISTRIBUTION                                              │</text>
+  <text class="sub" x="40" y="260">│  Python    ████████████░░░░░░░░░░░░░░  38%                     │</text>
+  <text class="sub" x="40" y="275">│  TypeScript ████████░░░░░░░░░░░░░░░░░  26%                    │</text>
+  <text class="sub" x="40" y="290">│  HTML      ███░░░░░░░░░░░░░░░░░░░░░░░  10%                     │</text>
+  <text class="sub" x="40" y="305">│  Go        ██░░░░░░░░░░░░░░░░░░░░░░░░  7%                      │</text>
+  <text class="sub" x="40" y="318">└────────────────────────────────────────────────────────────────┘</text>
+
+  <!-- 右下角装饰 -->
+  <text class="sub" x="900" y="270">[ SIGNAL: OK ]</text>
+  <text class="sub" x="900" y="285">[ UPTIME: 0427d ]</text>
+  <text class="sub" x="900" y="300">[ BUILD: 0xCAFEBABE ]</text>
+</svg>

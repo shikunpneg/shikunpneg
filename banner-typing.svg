@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 50" preserveAspectRatio="xMidYMid meet">
-  <!-- 自渲染打字动画：黑底白字 + 闪烁光标（SMIL 动画，GitHub 原生支持） -->
-  <style>
-    .bg { fill: #0a0a0a; }
-    .text { fill: #ffffff; font-family: 'Courier New', monospace; font-size: 22px; font-weight: 700; letter-spacing: 2px; }
-    .cursor { fill: #ffffff; font-family: 'Courier New', monospace; font-size: 22px; }
-    @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
-    .blink { animation: blink 1s steps(2) infinite; }
-    @keyframes cycle {
-      0%, 25%   { opacity: 1; }
-      25.01%, 33.33% { opacity: 0; }
-      33.34%, 58.33% { opacity: 1; }
-      58.34%, 66.67% { opacity: 0; }
-      66.68%, 91.67% { opacity: 1; }
-      91.68%, 100% { opacity: 0; }
-    }
-    .line1 { animation: cycle 9s infinite; }
-    .line2 { animation: cycle 9s infinite; animation-delay: -3s; }
-    .line3 { animation: cycle 9s infinite; animation-delay: -6s; }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 50" width="540" height="50">
+  <!-- 自渲染打字动画 · 用原生 <animate>（GitHub CAMO 兼容） -->
+  <rect width="540" height="50" rx="4" fill="#0a0a0a"/>
 
-  <rect class="bg" width="600" height="50" rx="4"/>
+  <!-- Line 1: DEVELOPER · ENGINEER · OPEN SOURCE -->
+  <text x="12" y="32" font-family="Courier New, monospace" font-size="18"
+        font-weight="700" fill="#ffffff" letter-spacing="2" opacity="1">
+    &gt; DEVELOPER · ENGINEER · OPEN
+    <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.25;0.27;0.6;0.62;1" dur="9s" repeatCount="indefinite"/>
+  </text>
 
-  <!-- 第一行：DEVELOPER · ENGINEER · OPEN SOURCE -->
-  <text class="text line1" x="20" y="32">&gt; DEVELOPER · ENGINEER · OPEN SOURCE</text>
+  <!-- Line 2: MANDARIN · AI · ORACLE BONE -->
+  <text x="12" y="32" font-family="Courier New, monospace" font-size="18"
+        font-weight="700" fill="#ffffff" letter-spacing="2" opacity="0">
+    &gt; MANDARIN · AI · ORACLE BONE
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3;0.33;0.6;0.63;1" dur="9s" repeatCount="indefinite"/>
+  </text>
 
-  <!-- 第二行：Mandarin · AI · ORACLE BONE -->
-  <text class="text line2" x="20" y="32">&gt; MANDARIN · AI · ORACLE BONE</text>
+  <!-- Line 3: 电脑前端 · 中文语言 -->
+  <text x="12" y="32" font-family="Courier New, monospace" font-size="18"
+        font-weight="700" fill="#ffffff" letter-spacing="2" opacity="0">
+    &gt; 电脑前端 · 中文语言
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.65;0.68;1" dur="9s" repeatCount="indefinite"/>
+  </text>
 
-  <!-- 第三行：电脑前端 · 中文语言 -->
-  <text class="text line3" x="20" y="32">&gt; 电脑前端 · 中文语言</text>
-
-  <!-- 闪烁光标 -->
-  <rect class="blink" x="580" y="14" width="10" height="26" fill="#ffffff"/>
+  <!-- 闪烁光标（独立动画） -->
+  <rect x="528" y="14" width="8" height="26" fill="#ffffff">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.5;0.5;1;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
 </svg>

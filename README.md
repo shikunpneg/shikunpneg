@@ -1,11 +1,11 @@
-<!-- 顶部赛博朋克黑白 Banner（GitHub 同源 100% 可加载） -->
+<!-- 顶部赛博朋克黑白 Banner（800px 宽，与下方图片对齐） -->
 <p align="center">
-  <img src="banner-cyberpunk.svg" alt="SHIKUNPNEG // Cyberpunk Banner" width="960" />
+  <img src="banner-cyberpunk.svg?v=2" alt="SHIKUNPNEG Banner" width="800" />
 </p>
 
-<!-- 黑白打字动画（SMIL，GitHub CAMO 兼容） -->
+<!-- 终端静态文本（800px 宽，与 banner 对齐） -->
 <p align="center">
-  <img src="banner-typing.svg" alt="DEVELOPER · ENGINEER · OPEN SOURCE" width="540" />
+  <img src="banner-typing.svg?v=2" alt="DEVELOPER · ENGINEER · OPEN SOURCE" width="800" />
 </p>
 
 <br/>
@@ -21,16 +21,16 @@
 
 ---
 
-<!-- 自渲染黑白 Stats 卡片（无外部依赖） -->
+<!-- 自渲染黑白 Stats 卡片（800px 宽） -->
 <p align="center">
-  <img src="stats-card.svg" alt="GitHub Stats Card" width="960" />
+  <img src="stats-card.svg?v=2" alt="GitHub Stats Card" width="800" />
 </p>
 
 <br/>
 
 ---
 
-<!-- 4 个 Pinned 仓库（GitHub 原生直链 · 显示仓库卡片） -->
+<!-- 4 个 Pinned 仓库 -->
 <p align="center">
   <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=shikunpneg&repo=Oracle-Bone-Script-IME&theme=default&hide_border=true" />
@@ -53,16 +53,16 @@
 
 ---
 
-<!-- 自渲染黑白技术栈（20 个图标，全部本地 SVG） -->
+<!-- 自渲染黑白技术栈（800px 宽） -->
 <p align="center">
-  <img src="tech-stack.svg" alt="Tech Stack" width="760" />
+  <img src="tech-stack.svg?v=2" alt="Tech Stack" width="800" />
 </p>
 
 ---
 
-<!-- 自渲染 7×53 活动热力图 -->
+<!-- 自渲染 7×53 活动热力图（760px 宽，CAMO 友好） -->
 <p align="center">
-  <img src="activity-grid.svg" alt="Activity Graph" width="960" />
+  <img src="activity-grid.svg?v=2" alt="Activity Graph" width="760" />
 </p>
 
 ---

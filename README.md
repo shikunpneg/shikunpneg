@@ -1,83 +1,150 @@
-<!-- 顶部赛博朋克黑白 Banner（800px 宽 · 用 raw.githubusercontent.com 绝对路径避免跳转） -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/banner-cyberpunk.svg" alt="SHIKUNPNEG Banner" width="800" />
-</p>
+<!-- ============================================================
+     甲骨文输入法 · GitHub Profile README
+     设计原则：响应式 / 可访问性 / 性能
+     - 所有 SVG 使用 viewBox（不写 width），GitHub 自动响应式缩放
+     - 所有 <img> 提供中文 alt
+     - 用 <div> 替代 <p> 包裹块级图
+     - 用 # 标题 + 文本描述补充图片信息
+     ============================================================ -->
 
-<!-- 终端静态文本（800px 宽） -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/banner-typing.svg" alt="DEVELOPER · ENGINEER · OPEN SOURCE" width="800" />
-</p>
+<div align="center">
 
-<br/>
+  <!-- 顶部 Banner：响应式 -->
+  <img
+    src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/banner-cyberpunk.svg"
+    alt="SHIKUNPNEG 赛博朋克黑白 Banner"
+    style="max-width: 800px; width: 100%; height: auto;"
+  />
 
-<!-- 黑白徽章（GitHub 白名单） -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=shikunpneg&style=flat-square&color=FFFFFF&label=PROFILE+VIEWS" alt="Views" />
-  <img src="https://img.shields.io/github/followers/shikunpneg?style=flat-square&color=000000&label=FOLLOWERS&labelColor=FFFFFF" alt="Followers" />
-  <img src="https://img.shields.io/github/stars/shikunpneg?affiliations=OWNER%2CCOLLABORATOR&style=flat-square&color=000000&label=STARS&labelColor=FFFFFF" alt="Stars" />
-</p>
+  <!-- 终端静态文本 -->
+  <img
+    src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/banner-typing.svg"
+    alt="DEVELOPER · ENGINEER · OPEN SOURCE"
+    style="max-width: 800px; width: 100%; height: auto;"
+  />
 
-<br/>
+  <br/>
+
+  <!-- 黑白徽章 -->
+  <img
+    src="https://komarev.com/ghpvc/?username=shikunpneg&style=flat-square&color=FFFFFF&label=PROFILE+VIEWS"
+    alt="个人主页浏览数"
+  />
+  <img
+    src="https://img.shields.io/github/followers/shikunpneg?style=flat-square&color=000000&label=FOLLOWERS&labelColor=FFFFFF"
+    alt="GitHub 关注者"
+  />
+  <img
+    src="https://img.shields.io/github/stars/shikunpneg?affiliations=OWNER%2CCOLLABORATOR&style=flat-square&color=000000&label=STARS&labelColor=FFFFFF"
+    alt="GitHub 仓库星标数"
+  />
+
+</div>
+
+## 关于我
+
+`DDLC(dog dog love cat)` — Mandarin-speaking developer, focusing on **AI · Oracle Bone · Poetry · Chinese language**. 核心项目见下。
 
 ---
 
-<!-- 自渲染黑白 Stats 卡片（800px 宽） -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/stats-card.svg" alt="GitHub Stats Card" width="800" />
-</p>
+## 项目数据
 
-<br/>
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/stats-card.svg"
+    alt="GitHub 数据卡片：28 公开仓库、6 关注者、155 星标、427 提交"
+    style="max-width: 800px; width: 100%; height: auto;"
+  />
+</div>
+
+> 数据更新于 2026-08-21。统计 SVG 为静态快照，建议在 GitHub Actions 中定时生成。
 
 ---
 
-<!-- 4 个 Pinned 仓库（自渲染本地卡片 · 100% 兼容） -->
-<p align="center">
+## 精选仓库
+
+<div align="center">
+
   <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME">
-    <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-1-oracle.svg" width="400" />
+    <img
+      src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-1-oracle.svg"
+      alt="甲骨文输入法仓库卡片：打汉字出甲骨文"
+      style="max-width: 400px; width: 100%; height: auto;"
+    />
   </a>
-  &nbsp;
+  <br/>
   <a href="https://github.com/shikunpneg/HumanAlignedPoeticity-">
-    <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-2-poeticity.svg" width="400" />
+    <img
+      src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-2-poeticity.svg"
+      alt="诗性对齐仓库卡片：中文诗歌自动评测指标"
+      style="max-width: 400px; width: 100%; height: auto;"
+    />
   </a>
-</p>
-
-<p align="center">
+  <br/>
   <a href="https://github.com/shikunpneg/ChineseHardJudgePoem">
-    <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-3-poem.svg" width="400" />
+    <img
+      src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-3-poem.svg"
+      alt="中文诗歌难样本数据集"
+      style="max-width: 400px; width: 100%; height: auto;"
+    />
   </a>
-  &nbsp;
+  <br/>
   <a href="https://github.com/shikunpneg/see-quantum_world">
-    <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-4-quantum.svg" width="400" />
+    <img
+      src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/repo-4-quantum.svg"
+      alt="看见看不见的量子世界"
+      style="max-width: 400px; width: 100%; height: auto;"
+    />
   </a>
-</p>
+
+</div>
+
+## 技术栈
+
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/tech-stack.svg"
+    alt="技术栈：Python / TypeScript / Rust / Go / Vue / React / Next.js / Tailwind / Node.js / Docker / K8S / Linux / VSCode / FastAPI / GitHub / NGINX / Vite / CI/CD"
+    style="max-width: 800px; width: 100%; height: auto;"
+  />
+</div>
+
+## 贡献活动
+
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/activity-grid.svg"
+    alt="GitHub 贡献热力图：365 天，每周 7 天 × 53 周，4 灰阶配色"
+    style="max-width: 760px; width: 100%; height: auto;"
+  />
+</div>
 
 ---
 
-<!-- 自渲染黑白技术栈（800px 宽） -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/tech-stack.svg" alt="Tech Stack" width="800" />
-</p>
+## 联系方式
 
----
+<div align="center">
 
-<!-- 自渲染 7×53 活动热力图（760px 宽） -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shikunpneg/shikunpneg/main/activity-grid.svg" alt="Activity Graph" width="760" />
-</p>
-
----
-
-<!-- 联系方式 + 链接 -->
-<p align="center">
   <a href="https://github.com/shikunpneg">
-    <img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=000000" alt="GitHub" />
+    <img
+      src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=000000"
+      alt="GitHub 个人主页"
+    />
   </a>
   &nbsp;
   <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME/releases">
-    <img src="https://img.shields.io/badge/RELEASE-v0.1.0-000000?style=for-the-badge&logo=github-actions&logoColor=FFFFFF&labelColor=000000" alt="Release" />
+    <img
+      src="https://img.shields.io/badge/RELEASE-v0.1.0-000000?style=for-the-badge&logo=github-actions&logoColor=FFFFFF&labelColor=000000"
+      alt="甲骨文输入法 v0.1.0 Release"
+    />
   </a>
-</p>
 
-<p align="center">
-  <sub>📡 <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME">主项目</a> · <a href="https://shikunpneg.github.io/Oracle-Bone-Script-IME/">在线 Demo</a> · <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME/releases">Release</a></sub>
-</p>
+  <br/><br/>
+
+  <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME">主项目</a>
+  ·
+  <a href="https://shikunpneg.github.io/Oracle-Bone-Script-IME/">在线 Demo</a>
+  ·
+  <a href="https://github.com/shikunpneg/Oracle-Bone-Script-IME/releases">下载 Release</a>
+
+</div>

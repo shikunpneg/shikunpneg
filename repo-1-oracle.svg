@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <!-- 仓库卡片 1: Oracle-Bone-Script-IME（自渲染，GitHub CAMO 100% 兼容） -->
+  <rect width="400" height="120" rx="6" fill="#0a0a0a" stroke="#ffffff" stroke-width="1"/>
+
+  <!-- 顶部色带 -->
+  <rect width="400" height="4" fill="#ffffff"/>
+
+  <!-- 仓库名（粗体大字号） -->
+  <text x="20" y="32" font-family="Arial Black, sans-serif" font-size="16"
+        font-weight="900" fill="#ffffff" letter-spacing="1">Oracle-Bone-Script-IME</text>
+
+  <!-- Owner/路径 -->
+  <text x="20" y="50" font-family="Courier New, monospace" font-size="10"
+        fill="#8b8b8b" letter-spacing="1">shikunpneg / Python</text>
+
+  <!-- 描述 -->
+  <text x="20" y="74" font-family="Microsoft YaHei, sans-serif" font-size="12"
+        fill="#ffffff" fill-opacity="0.85">将汉字变成甲骨文</text>
+
+  <!-- 统计行 -->
+  <text x="20" y="100" font-family="Courier New, monospace" font-size="11" fill="#8b8b8b">
+    ★ 0    FORK 0    TODAY
+  </text>
+
+  <!-- 右侧装饰 -->
+  <text x="380" y="32" text-anchor="end" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">REPO</text>
+  <text x="380" y="50" text-anchor="end" font-family="Courier New, monospace" font-size="9"
+        fill="#8b8b8b" letter-spacing="1">v0.1.0</text>
+
+  <!-- 底部小标识 -->
+  <line x1="20" y1="110" x2="380" y2="110" stroke="#ffffff" stroke-opacity="0.2" stroke-width="0.5"/>
+  <text x="20" y="117" font-family="Courier New, monospace" font-size="8"
+        fill="#8b8b8b" letter-spacing="1">[ PUBLIC ]</text>
+  <text x="380" y="117" text-anchor="end" font-family="Courier New, monospace" font-size="8"
+        fill="#8b8b8b" letter-spacing="1">2026-08-21</text>
+</svg>
